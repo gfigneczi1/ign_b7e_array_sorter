@@ -31,3 +31,12 @@ source ~/ros2_ws/install/setup.bash
 ``` r
 ros2 launch array_sorter launch_array_sorter.launch.py
 ```
+
+### Check calculation
+Echo topics /unsorted_array and /sorted_array by:
+``` r
+ros2 topic echo /unsorted_array
+```
+``` r
+ros2 topic echo /sorted_array
+```

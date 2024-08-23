@@ -23,7 +23,10 @@ set(ament_dependencies
 
 add_executable(array_sorter src/array_sorter.cpp)
 add_executable(array_publisher src/array_publisher.cpp)
+# first node to execute sorting and publish new topic
 ament_target_dependencies(array_sorter ${ament_dependencies} )
+
+# second node to publish the topic
 ament_target_dependencies(array_publisher ${ament_dependencies} )
 
 install(DIRECTORY launch
